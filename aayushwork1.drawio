@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" modified="2024-06-21T10:01:20.623Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.0" etag="SetL6F7wP1fctzpRIcSe" type="github">
+  <diagram name="Page-1" id="FnZwd4wk_DNA2JofFEJg">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="223" width="48" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Python Middleware Service" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="318" y="102" width="241" height="241" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Telegram API" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="222" y="412" width="108" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Integration Logic" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="659" y="412" width="136" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Salesforce Agent" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="661" y="513" width="134" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Sends message" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.7;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="439" y="68" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="Forwards message" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.99;entryY=-0.01;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="439" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="Receives message" style="curved=1;startArrow=none;endArrow=block;exitX=0.08;exitY=-0.01;entryX=0;entryY=0.76;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="137" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Processes message" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.76;entryX=0.53;entryY=-0.01;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Retrieves data" style="curved=1;startArrow=none;endArrow=block;exitX=0.53;exitY=1;entryX=0.53;entryY=0.01;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Updates data" style="curved=1;startArrow=none;endArrow=block;exitX=0.24;exitY=0.01;entryX=0.25;entryY=1;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="621" y="479" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Prepares response" style="curved=1;startArrow=none;endArrow=block;exitX=0.17;exitY=-0.01;entryX=0.99;entryY=1;" edge="1" parent="1" source="5" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="589" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Forwards response" style="curved=1;startArrow=none;endArrow=block;exitX=0.01;exitY=1;entryX=0.53;entryY=-0.01;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="287" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Sends response" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.12;entryX=-0.01;entryY=0.7;" edge="1" parent="1" source="4" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="54" y="377" />
+              <mxPoint x="54" y="68" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
